@@ -1,0 +1,251 @@
+/* =========================
+   GENERIC LINES
+========================= */
+
+.line {
+  position: absolute;
+
+  overflow: hidden;
+
+  background: black;
+
+  z-index: 1;
+}
+
+.line::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height: 100%;
+
+  background: gold;
+
+  transition:
+    width 0.4s ease,
+    left 0.4s ease;
+}
+
+.line.active-left::after {
+  width: 50%;
+}
+
+.line.active-right::after {
+  left: 50%;
+
+  width: 50%;
+}
+
+/* =========================
+   VERTICAL LINES
+========================= */
+
+[class*="vertical"],
+.win {
+  width: 0.45rem;
+}
+
+/* =========================
+   QUARTER FINALS
+========================= */
+
+.round-1 {
+  top: 430px;
+  left: 60px;
+
+  width: 130px;
+  height: 0.2rem;
+}
+
+.vertical {
+  top: 430px;
+  left: 60px;
+
+  height: 120px;
+}
+
+.vertical-2 {
+  top: 430px;
+  left: 190px;
+
+  height: 120px;
+}
+
+/* =========================
+   QUARTER FINALS 2
+========================= */
+
+.round-2 {
+  top: 430px;
+  left: 320px;
+
+  width: 130px;
+  height: 0.2rem;
+}
+
+.vertical-3 {
+  top: 430px;
+  left: 320px;
+
+  height: 120px;
+}
+
+.vertical-4 {
+  top: 430px;
+  left: 450px;
+
+  height: 120px;
+}
+
+/* =========================
+   QUARTER FINALS 3
+========================= */
+
+.round-3 {
+  top: 430px;
+  left: 580px;
+
+  width: 130px;
+  height: 0.2rem;
+}
+
+.vertical-5 {
+  top: 430px;
+  left: 580px;
+
+  height: 120px;
+}
+
+.vertical-6 {
+  top: 430px;
+  left: 710px;
+
+  height: 120px;
+}
+
+/* =========================
+   QUARTER FINALS 4
+========================= */
+
+.round-4 {
+  top: 430px;
+  left: 840px;
+
+  width: 130px;
+  height: 0.2rem;
+}
+
+.vertical-7 {
+  top: 430px;
+  left: 840px;
+
+  height: 120px;
+}
+
+.vertical-8 {
+  top: 430px;
+  left: 970px;
+
+  height: 120px;
+}
+
+/* =========================
+   SEMI FINALS
+========================= */
+
+.demi-final-1 {
+  top: 310px;
+  left: 130px;
+
+  width: 260px;
+  height: 0.2rem;
+}
+
+.vertical-win {
+  top: 310px;
+  left: 130px;
+
+  height: 120px;
+}
+
+.vertical-win-2 {
+  top: 310px;
+  left: 390px;
+
+  height: 120px;
+}
+
+.demi-final-2 {
+  top: 310px;
+  left: 650px;
+
+  width: 260px;
+  height: 0.2rem;
+}
+
+.vertical-win-3 {
+  top: 310px;
+  left: 650px;
+
+  height: 120px;
+}
+
+.vertical-win-4 {
+  top: 310px;
+  left: 910px;
+
+  height: 120px;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.finale {
+  top: 190px;
+  left: 260px;
+
+  width: 520px;
+  height: 0.2rem;
+}
+
+.vertical-win-5 {
+  top: 190px;
+  left: 260px;
+
+  height: 120px;
+}
+
+.vertical-win-6 {
+  top: 190px;
+  left: 780px;
+
+  height: 120px;
+}
+
+/* =========================
+   WIN LINE
+========================= */
+
+.win {
+  top: 110px;
+  left: 520px;
+
+  height: 80px;
+}
+/* =========================
+   RENDER FIX
+========================= */
+
+.line,
+.line::after {
+  transform: translateZ(0);
+
+  will-change: transform;
+
+  backface-visibility: hidden;
+}

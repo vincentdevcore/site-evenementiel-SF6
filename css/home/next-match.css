@@ -1,0 +1,147 @@
+/* =========================
+   NEXT MATCH SECTION
+========================= */
+
+.next-match {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  padding: 0;
+
+  transform: translateY(-5rem);
+
+  text-align: center;
+
+  overflow: visible;
+}
+/* =========================
+   TITLE
+========================= */
+
+.next-match-title {
+  margin: 0;
+
+  font-family: "CityBrawlers";
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  line-height: 1;
+
+  letter-spacing: 3px;
+
+  color: var(--color-yellow);
+
+  text-shadow: var(--text-shadow-grey);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.next-match-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: clamp(1rem, 2vw, 2rem);
+
+  width: min(90vw, 700px);
+
+  margin-inline: auto;
+
+  padding: clamp(1rem, 3vw, 2rem);
+
+  border-radius: 1.5rem;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  border: 2px solid rgba(255, 196, 0, 0.15);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 0 25px rgba(0, 194, 255, 0.18),
+    0 0 45px rgba(239, 19, 240, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* =========================
+   PLAYERS
+========================= */
+
+.next-player {
+  min-width: 120px;
+
+  max-width: 240px;
+
+  overflow-wrap: break-word;
+
+  line-height: 1;
+
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+
+  font-weight: 900;
+
+  color: white;
+
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(0, 194, 255, 0.2);
+}
+
+/* =========================
+   VS
+========================= */
+
+.next-vs {
+  font-family: "CityBrawlers";
+
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  transform: scale(1.1);
+  line-height: 1;
+
+  color: var(--color-yellow);
+
+  text-shadow:
+    0 0 10px orange,
+    0 0 30px red;
+}
+
+/* =========================
+   STAGE
+========================= */
+
+.next-stage {
+  margin: 0;
+
+  width: fit-content;
+
+  max-width: 90vw;
+
+  line-height: 1;
+
+  text-align: center;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  font-family: "CityBrawlers";
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: var(--color-yellow);
+
+  text-shadow: var(--text-shadow-grey);
+}

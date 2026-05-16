@@ -1,0 +1,115 @@
+/* =========================
+   PLAYER CARD
+========================= */
+
+.player {
+  position: absolute;
+
+  z-index: 20;
+
+  width: 120px;
+  height: 180px;
+
+  overflow: visible;
+
+  animation: playerSpawn 0.4s ease;
+}
+
+/* =========================
+   PLAYER IMAGE
+========================= */
+
+.player img {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 50;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  opacity: 1 !important;
+
+  transform: scale(1);
+
+  pointer-events: none;
+}
+
+/* =========================
+   PLAYER NAME
+========================= */
+
+.player-name {
+  position: absolute;
+
+  left: 35%;
+  bottom: -0.5rem;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 90px;
+  max-width: 140px;
+
+  min-height: 2rem;
+
+  padding: 0.3rem 0.8rem;
+
+  border-radius: 999px;
+
+  background: rgba(0, 0, 0, 0.88);
+
+  border: 1px solid rgba(255, 255, 255, 0.78);
+
+  backdrop-filter: blur(6px);
+
+  font-family: "CityBrawlers";
+
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+
+  letter-spacing: 1px;
+
+  text-align: center;
+
+  color: rgb(39, 245, 11);
+
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.2),
+    0 0 15px rgba(0, 194, 255, 0.2);
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  z-index: 80;
+}
+
+/* =========================
+   PLAYER STATES
+========================= */
+
+.loser {
+  opacity: 1;
+
+  filter: grayscale(100%) brightness(0.85);
+
+  transition:
+    filter 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.winner {
+  animation: winnerGlow 1s ease infinite alternate;
+}
+
+.qualified {
+  opacity: 0.7;
+}

@@ -1,0 +1,244 @@
+/* =========================
+   ADMIN PAGE
+========================= */
+
+.admin-page {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: radial-gradient(circle at top, #243672 0%, #0b1026 70%);
+}
+
+/* =========================
+   BACKGROUND GLOW
+========================= */
+
+.admin-page::before,
+.admin-page::after {
+  content: "";
+
+  position: fixed;
+
+  border-radius: 50%;
+
+  filter: blur(90px);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.admin-page::before {
+  width: 600px;
+  height: 600px;
+
+  top: -200px;
+  right: -200px;
+
+  background: rgba(0, 194, 255, 0.14);
+}
+
+.admin-page::after {
+  width: 500px;
+  height: 500px;
+
+  bottom: -180px;
+  left: -180px;
+
+  background: rgba(239, 19, 240, 0.12);
+}
+
+/* =========================
+   DASHBOARD LAYOUT
+========================= */
+
+.admin-body {
+  display: grid;
+
+  grid-template-columns: 320px minmax(700px, 1fr) 320px;
+
+  gap: 2rem;
+
+  align-items: stretch;
+
+  max-width: 1500px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.admin-waiting {
+  border-radius: 24px;
+  border: 1px solid #1d5d91;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  min-height: 400px;
+}
+/* =========================
+   MAIN CARD
+========================= */
+
+.admin-card {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 520px;
+
+  padding: 3rem;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  background: rgba(8, 12, 30, 0.88);
+
+  border: 2px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 0 30px rgba(0, 194, 255, 0.18),
+    0 0 80px rgba(239, 19, 240, 0.12);
+}
+.admin-requests,
+.admin-waiting {
+  min-height: 520px;
+}
+
+.admin-players {
+  min-height: 520px;
+}
+
+.admin-card.dashboard-mode {
+  padding: 2rem 4rem;
+}
+/* =========================
+   CARD GLOW
+========================= */
+
+.admin-card::before,
+.admin-card::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(40px);
+}
+
+.admin-card::before {
+  width: 250px;
+  height: 250px;
+
+  top: -120px;
+  right: -120px;
+
+  background: rgba(0, 194, 255, 0.15);
+}
+
+.admin-card::after {
+  width: 220px;
+  height: 220px;
+
+  bottom: -120px;
+  left: -120px;
+
+  background: rgba(239, 19, 240, 0.12);
+}
+
+/* =========================
+   DASHBOARD MODE
+========================= */
+
+.admin-card.dashboard-mode {
+  width: 100%;
+
+  max-width: none;
+
+  min-height: 100vh;
+
+  margin: 0;
+
+  padding: 2rem 3rem;
+
+  border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+    135deg,
+    rgba(8, 12, 30, 0.96),
+    rgba(16, 25, 53, 0.96)
+  );
+
+  box-shadow: none;
+}
+
+/* =========================
+   DASHBOARD HEADER
+========================= */
+
+.admin-dashboard-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.admin-dashboard-header h1 {
+  margin: 0;
+
+  font-size: 2.5rem;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.admin-actions {
+  display: flex;
+
+  gap: 1rem;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+.admin-card h1 {
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 2.5rem;
+
+  text-align: center;
+
+  font-family: "CityBrawlers";
+
+  font-size: 3rem;
+
+  letter-spacing: 3px;
+
+  color: var(--color-yellow);
+
+  text-shadow:
+    0 0 10px rgba(255, 188, 0, 0.8),
+    0 0 25px rgba(255, 119, 0, 0.5);
+}

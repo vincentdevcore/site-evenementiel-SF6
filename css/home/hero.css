@@ -1,0 +1,194 @@
+/* =========================
+   HERO LAYOUT
+========================= */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+
+  width: 100%;
+  max-width: 1400px;
+  min-height: 100dvh;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: clamp(2rem, 5vw, 4rem);
+
+  overflow: visible;
+}
+
+/* =========================
+   TITLE WRAPPER
+========================= */
+
+.title {
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* =========================
+   GENERIC WORDS
+========================= */
+
+.word {
+  position: absolute;
+
+  display: inline-block;
+
+  font-family: "Brush King";
+
+  line-height: 1;
+
+  transform-origin: center;
+
+  user-select: none;
+
+  white-space: nowrap;
+
+  font-weight: normal;
+
+  -webkit-text-stroke: 1.5px black;
+
+  filter: drop-shadow(0 6px 0 rgba(0, 0, 0, 0.5));
+
+  text-rendering: geometricPrecision;
+}
+
+/* =========================
+   TITLE WORDS
+========================= */
+
+.word-1 {
+  top: 5rem;
+  left: 10rem;
+
+  font-size: clamp(3rem, 3vw, 6rem);
+
+  color: yellow;
+
+  text-shadow:
+    -4px 4px black,
+    -6px 6px rgba(0, 0, 0, 0.45);
+}
+
+.word-2 {
+  top: 20rem;
+  left: 2rem;
+
+  font-size: clamp(3rem, 3vw, 6rem);
+
+  transform: rotate(-15deg);
+
+  color: var(--color-red);
+
+  text-shadow:
+    -4px 4px #ffbc00,
+    -6px 6px rgba(0, 0, 0, 0.45);
+}
+
+.word-3 {
+  top: 30rem;
+  left: 23rem;
+
+  font-size: clamp(3rem, 3vw, 6rem);
+
+  transform: rotate(10deg);
+
+  color: var(--color-yellow);
+
+  text-shadow:
+    -4px 4px #b53725,
+    -6px 6px rgba(0, 0, 0, 0.45);
+}
+
+/* =========================
+   STREET FIGHTER
+========================= */
+
+.street-fighter {
+  position: absolute;
+
+  top: 8rem;
+  right: 10rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  transform: rotate(-12deg);
+
+  z-index: 15;
+}
+
+.word-4,
+.word-5 {
+  position: relative;
+
+  font-family: "CityBrawlers";
+
+  font-size: clamp(4rem, 5vw, 6rem);
+
+  color: yellow;
+
+  white-space: nowrap;
+
+  -webkit-text-stroke: 3px black;
+
+  text-shadow:
+    -3px 3px black,
+    -5px 5px rgba(0, 0, 0, 0.4);
+}
+.word-4 {
+  transform: rotate(-20deg);
+}
+
+.word-5 {
+  transform: rotate(28deg);
+}
+
+/* =========================
+   CODY
+========================= */
+
+.hero-character {
+  position: absolute;
+
+  top: 21%;
+  right: 2%;
+
+  z-index: 30;
+
+  pointer-events: none;
+}
+
+.hero-character img {
+  width: clamp(340px, 20vw, 520px);
+  max-width: 100%;
+
+  object-fit: contain;
+
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.35))
+    drop-shadow(0 0 25px rgba(0, 194, 255, 0.12));
+}
+
+/* =========================
+   CTA
+========================= */
+
+.hero-actions {
+  position: absolute;
+
+  left: 15rem;
+  bottom: 12rem;
+  transform-origin: center;
+  z-index: 50;
+}

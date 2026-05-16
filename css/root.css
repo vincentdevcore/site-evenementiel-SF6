@@ -1,0 +1,33 @@
+:root {
+  --color-red: #b53725;
+  --color-yellow: #ffbc00;
+  --color-pink: #ef13f0;
+  --color-blue: #00c2ff;
+  --black-color: #000;
+  --bg-color: #243672;
+  --color-white: white;
+  --text-shadow: -3px 3px green;
+  --text-shadow-black: -3px 3px black;
+  --text-shadow-red: -3px 3px #b53725;
+  --text-shadow-yellow: -3px 3px #ffbc00;
+  --text-shadow-blue: -3px 3px #01fefd;
+  --text-shadow-grey: -3px 3px #252422;
+  --text-shadow-orange: -5px 5px rgb(255, 123, 0);
+
+  --gradient: linear-gradient(#ef13f0, #00c2ff);
+}
+
+@font-face {
+  font-family: "Brush King";
+  src: url("../fonts/Brush\ King.otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CityBrawlers";
+  src: url("../fonts/CityBrawlersBoldCaps.woff2") format("woff2");
+  font-display: swap;
+}

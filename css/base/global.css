@@ -1,0 +1,70 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+
+  background-color: var(--bg-color);
+  background-image: url(../../img/noudasf6vert.png);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center center;
+
+  background-attachment: fixed;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* =========================
+   GLOBAL LAYOUT
+========================= */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bloc-horizontale {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* =========================
+   SECTION BASE
+========================= */
+
+section {
+  position: relative;
+
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+.slide {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 4vw, 3rem);
+
+  overflow: visible;
+}
+
+.next-match,
+.bracket {
+  position: relative;
+  z-index: 1;
+}

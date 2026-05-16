@@ -1,0 +1,34 @@
+/* =========================
+   BRACKET CONTAINER
+========================= */
+
+.bracket {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: min(92vw, 900px);
+  min-height: 700px;
+
+  margin: 0 auto;
+  transform: translateY(-7rem);
+
+  overflow: visible;
+}
+
+/* =========================
+   BRACKET CONTENT
+========================= */
+
+.bracket-content {
+  position: relative;
+
+  width: min(100%, 1000px);
+  height: 600px;
+
+  margin: 0 auto;
+
+  transform-origin: center;
+}

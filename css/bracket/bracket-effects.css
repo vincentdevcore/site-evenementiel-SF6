@@ -1,0 +1,23 @@
+/* =========================
+   ACTIVE LINES
+========================= */
+
+.line.active {
+  background: gold;
+
+  box-shadow:
+    0 0 10px gold,
+    0 0 20px orange;
+}
+
+/* =========================
+   FINAL CLASH OVERFLOW
+========================= */
+
+.final1,
+.final2,
+.champion,
+.bracket,
+.bracket-content {
+  overflow: visible;
+}

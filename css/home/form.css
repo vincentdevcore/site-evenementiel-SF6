@@ -1,0 +1,93 @@
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.form-container {
+  position: absolute;
+
+  bottom: 120%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: none;
+
+  width: min(90vw, 500px);
+  min-height: 320px;
+
+  padding: 2rem;
+
+  background: linear-gradient(#140a1f, #0a668f, #9daebc, #0a668f, #140a1f);
+
+  border: 3px solid #dafe2b;
+  border-radius: 1rem;
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.45),
+    0 0 25px rgba(218, 254, 43, 0.18);
+
+  z-index: 100;
+}
+
+/* =========================
+   ACTIVE STATE
+========================= */
+
+.form-container.active {
+  display: block;
+}
+
+/* =========================
+   FORM
+========================= */
+
+#register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-container input,
+.form-container select {
+  width: min(100%, 320px);
+  height: 3rem;
+
+  border: none;
+  border-radius: 0.4rem;
+
+  padding-inline: 1rem;
+
+  font-size: 1rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.form-container .btn {
+  width: 220px;
+  height: 55px;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.form-container .btn:hover {
+  opacity: 0.92;
+}
+
+.form-container .btn:active {
+  transform: scale(0.97);
+}

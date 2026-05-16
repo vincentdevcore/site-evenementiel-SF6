@@ -1,0 +1,95 @@
+/* =========================
+   QUARTER FINAL PLAYERS
+========================= */
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8 {
+  top: 550px;
+}
+
+.p1 {
+  left: 0px;
+}
+
+.p2 {
+  left: 130px;
+}
+
+.p3 {
+  left: 260px;
+}
+
+.p4 {
+  left: 390px;
+}
+
+.p5 {
+  left: 520px;
+}
+
+.p6 {
+  left: 650px;
+}
+
+.p7 {
+  left: 780px;
+}
+
+.p8 {
+  left: 910px;
+}
+
+/* =========================
+   SEMI FINALS
+========================= */
+
+.semi1,
+.semi2,
+.semi3,
+.semi4 {
+  top: 190px;
+}
+
+.semi1 {
+  left: 70px;
+}
+
+.semi2 {
+  left: 330px;
+}
+
+.semi3 {
+  left: 590px;
+}
+
+.semi4 {
+  left: 850px;
+}
+
+/* =========================
+   FINALS
+========================= */
+
+.final1,
+.final2,
+.champion {
+  top: -50px;
+}
+
+.final1 {
+  left: 200px;
+}
+
+.final2 {
+  left: 720px;
+}
+
+.champion {
+  left: 460px;
+}
