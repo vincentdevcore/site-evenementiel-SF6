@@ -168,7 +168,7 @@ async function renderAdminPanel() {
   const returnBtn = document.querySelector(".btn-admin");
 
   returnBtn.addEventListener("click", () => {
-    window.location.href = "./index.html";
+    window.location.href = "./index.php";
   });
 }
 
