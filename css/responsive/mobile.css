@@ -284,15 +284,15 @@
 
 @media (max-width: 390px) {
   .hero-content {
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
 
   .title {
-    gap: 1.5rem;
+    gap: 7rem;
   }
 
   .street-title {
-    transform: rotate(-5deg) scale(0.9);
+    transform: rotate(-5deg) scale(1.2);
   }
 
   .hero-character img {
