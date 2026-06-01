@@ -1,0 +1,288 @@
+/* ==========================================================
+   ADMIN TABLET / SMALL LAPTOP
+========================================================== */
+
+@media (max-width: 1200px) {
+  .admin-page {
+    padding: 1.5rem;
+  }
+
+  .admin-card.dashboard-mode {
+    padding: 2rem;
+  }
+
+  /* HEADER */
+  .admin-dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .admin-dashboard-header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  /* BOUTONS EN 2x2 */
+  .admin-actions {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+
+    max-width: 700px;
+  }
+
+  .admin-actions .btn {
+    width: 100%;
+    min-height: 62px;
+  }
+
+  /* DASHBOARD */
+  .admin-body {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      "requests waiting"
+      "players players";
+
+    gap: 1.5rem;
+
+    align-items: stretch;
+  }
+
+  .admin-requests {
+    grid-area: requests;
+    min-height: 350px;
+  }
+
+  .admin-waiting {
+    grid-area: waiting;
+    min-height: 350px;
+  }
+
+  .admin-players {
+    grid-area: players;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .admin-requests,
+  .admin-waiting,
+  .admin-players {
+    min-width: 0;
+    width: 100%;
+  }
+}
+/* =========================================================
+   ADMIN MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .admin-page {
+    padding: 0.8rem;
+  }
+
+  .admin-card.dashboard-mode {
+    padding: 1.2rem;
+    border-radius: 24px;
+  }
+
+  /* HEADER */
+  .admin-dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .admin-dashboard-header h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  /* BOUTONS */
+  .admin-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .admin-actions .btn {
+    width: 100%;
+    min-height: 55px;
+    font-size: 0.95rem;
+    border-radius: 16px;
+  }
+
+  /* BODY EN 1 SEULE COLONNE */
+  .admin-body {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "requests"
+      "waiting"
+      "players";
+
+    gap: 1rem;
+  }
+
+  /* CARDS */
+  .admin-requests,
+  .admin-waiting,
+  .admin-players {
+    width: 100%;
+    min-width: 100%;
+    min-height: auto;
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  .admin-requests,
+  .admin-waiting {
+    min-height: 240px;
+  }
+
+  .admin-players {
+    min-height: 320px;
+    overflow-x: auto;
+  }
+
+  /* TITRES */
+  .admin-requests h2,
+  .admin-waiting h2,
+  .admin-players h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .stage-title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .champion-card {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+/* =========================================================
+   ADMIN FIX FINAL MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .admin-page {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* CARD PRINCIPALE */
+  .admin-card.dashboard-mode {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  /* HEADER */
+  .admin-dashboard-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .admin-dashboard-header h1 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  /* BOUTONS */
+  .admin-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .admin-actions .btn {
+    width: 100%;
+    min-height: 56px;
+    font-size: 0.95rem;
+  }
+
+  /* GRID MOBILE */
+  .admin-body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 100%;
+
+    gap: 1rem;
+  }
+
+  /* RESET COMPLET DES PANELS */
+  .admin-requests,
+  .admin-waiting,
+  .admin-players {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+
+    min-height: auto;
+
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .admin-requests,
+  .admin-waiting {
+    min-height: 220px;
+  }
+
+  .admin-players {
+    overflow-x: auto;
+  }
+
+  /* TITRES */
+  .admin-card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .admin-card h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* GLOWS PLUS LIGHT */
+  .admin-page::before {
+    width: 250px;
+    height: 250px;
+    filter: blur(60px);
+  }
+
+  .admin-page::after {
+    width: 220px;
+    height: 220px;
+    filter: blur(60px);
+  }
+}

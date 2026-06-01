@@ -9,30 +9,40 @@
 }
 
 .hero-content {
-  position: relative;
-
   width: 100%;
   max-width: 1400px;
   min-height: 100dvh;
+  height: auto;
 
   margin: 0 auto;
+  padding: clamp(2rem, 3vw, 3rem);
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 
   overflow: visible;
 }
 
 /* =========================
-   TITLE WRAPPER
+   LEFT TITLE
 ========================= */
 
 .title {
-  pointer-events: none;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* margin-top: 0; */
+
+  gap: 10rem;
+  transform: translateY(-150px);
+
   z-index: 20;
+  pointer-events: none;
 }
 
 /* =========================
@@ -40,18 +50,12 @@
 ========================= */
 
 .word {
-  position: absolute;
-
   display: inline-block;
 
   font-family: "Brush King";
-
   line-height: 1;
 
-  transform-origin: center;
-
   user-select: none;
-
   white-space: nowrap;
 
   font-weight: normal;
@@ -64,16 +68,15 @@
 }
 
 /* =========================
-   TITLE WORDS
+   LEFT WORDS
 ========================= */
 
 .word-1 {
-  top: 5rem;
-  left: 10rem;
-
-  font-size: clamp(3rem, 3vw, 6rem);
+  font-size: clamp(2rem, 4vw, 4rem);
 
   color: yellow;
+
+  margin-left: 6rem;
 
   text-shadow:
     -4px 4px black,
@@ -81,10 +84,9 @@
 }
 
 .word-2 {
-  top: 20rem;
-  left: 2rem;
+  font-size: clamp(2rem, 4vw, 4rem);
 
-  font-size: clamp(3rem, 3vw, 6rem);
+  margin-top: 2rem;
 
   transform: rotate(-15deg);
 
@@ -96,10 +98,10 @@
 }
 
 .word-3 {
-  top: 30rem;
-  left: 23rem;
+  font-size: clamp(2rem, 4vw, 4rem);
 
-  font-size: clamp(3rem, 3vw, 6rem);
+  margin-top: 2rem;
+  margin-left: 8rem;
 
   transform: rotate(10deg);
 
@@ -111,35 +113,46 @@
 }
 
 /* =========================
-   STREET FIGHTER
+   RIGHT SIDE
 ========================= */
 
 .street-fighter {
-  position: absolute;
+  width: 50%;
 
-  top: 8rem;
-  right: 10rem;
+  position: relative;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 15;
+}
+
+/* =========================
+   STREET TITLE
+========================= */
+
+.street-title {
   display: flex;
   align-items: center;
   gap: 1rem;
 
   transform: rotate(-12deg);
 
-  z-index: 15;
+  margin-bottom: -3rem;
+  margin-left: -15rem;
+
+  z-index: 10;
 }
 
 .word-4,
 .word-5 {
-  position: relative;
-
   font-family: "CityBrawlers";
 
   font-size: clamp(4rem, 5vw, 6rem);
 
   color: yellow;
-
-  white-space: nowrap;
 
   -webkit-text-stroke: 3px black;
 
@@ -147,6 +160,7 @@
     -3px 3px black,
     -5px 5px rgba(0, 0, 0, 0.4);
 }
+
 .word-4 {
   transform: rotate(-20deg);
 }
@@ -160,12 +174,8 @@
 ========================= */
 
 .hero-character {
-  position: absolute;
-
-  top: 21%;
-  right: 2%;
-
-  z-index: 30;
+  position: relative;
+  z-index: 5;
 
   pointer-events: none;
 }
@@ -187,8 +197,8 @@
 .hero-actions {
   position: absolute;
 
-  left: 15rem;
-  bottom: 12rem;
-  transform-origin: center;
+  left: clamp(2rem, 15%, 15rem);
+  bottom: clamp(4rem, 18%, 15rem);
+
   z-index: 50;
 }

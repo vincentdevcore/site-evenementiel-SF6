@@ -1057,14 +1057,14 @@
   }
 
   .word-2 {
-    top: 9rem;
+    top: 12rem;
     left: 4rem;
 
     font-size: 1.5rem;
   }
 
   .word-3 {
-    top: 24rem;
+    top: 30rem;
     left: 1rem;
 
     font-size: 1.5rem;
@@ -1075,7 +1075,7 @@
   .street-fighter {
     position: absolute;
 
-    top: 12rem;
+    top: 18rem;
     right: 3rem;
 
     transform: rotate(-12deg) scale(0.75);
@@ -1092,15 +1092,13 @@
   .hero-character {
     position: absolute;
 
-    right: 1rem;
-    bottom: 8rem;
+    right: clamp(-1rem, 2vw, 1rem);
+    bottom: clamp(15rem, 12vh, 12rem);
   }
 
   .hero-character img {
-    width: 50vw;
-    max-width: 290px;
+    width: clamp(180px, 48vw, 320px);
   }
-
   /* ---------- CTA ---------- */
 
   .hero-actions {
@@ -1118,14 +1116,27 @@
   }
 
   /* ---------- BRACKET ---------- */
+
   .bracket {
-    justify-content: flex-start;
+    width: 100%;
+
     overflow-x: auto;
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+
+    -webkit-overflow-scrolling: touch;
+
+    padding-inline: 10vw;
   }
 
   .bracket-content {
-    left: -31.5rem;
-    transform: scale(0.35);
+    min-width: 1000px;
+
+    transform-origin: left top;
+
+    transform: scale(clamp(0.34, 0.12vw + 0.34, 0.52));
   }
   /* ---------- ADMIN BTN ---------- */
 

@@ -21,7 +21,13 @@
     <link rel="stylesheet" href="./css/bracket/bracket-effects.css" />
     <link rel="stylesheet" href="./css/bracket/bracket-animations.css" />
 
-    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/responsive/desktop.css" />
+<link rel="stylesheet" href="./css/responsive/laptop.css" />
+<link rel="stylesheet" href="./css/responsive/tablet.css" />
+<link rel="stylesheet" href="./css/responsive/mobile.css" />
+<link rel="stylesheet" href="./css/responsive/admin-responsive.css" />
+
+    <!-- <link rel="stylesheet" href="./css/responsive.css" /> -->
     <script defer src="./js/main.js"></script>
     <link rel="icon" type="image/png" href="./img/favicon-kwerel.png" />
   </head>
@@ -32,23 +38,28 @@
     </header>
     <main class="container">
       <div class="bloc-horizontale">
-        <!-- ================= HERO ================= -->
+  
         <section class="slide hero-section">
           <div class="hero-content">
+
             <div class="title">
-              <span class="word word-1">Kwerel</span>
-              <span class="word word-2">Présente</span>
-              <span class="word word-3">le tournoi</span>
+                <span class="word word-1">Kwerel</span>
+                <span class="word word-2">Présente</span>
+                <span class="word word-3">le tournoi</span>
+            </div>
 
               <div class="street-fighter">
+                <div class="street-title">
                 <span class="word word-4">Street</span>
                 <span class="word word-5">Fighter 6</span>
+                </div>
+                <div class="hero-character">
+                  <img src="./img/Cody.png" alt="Cody Street Fighter" />
+                </div>
               </div>
-            </div>
+           
 
-            <div class="hero-character">
-              <img src="./img/Cody.png" alt="Cody Street Fighter" />
-            </div>
+           
 
             <div class="hero-actions">
               <button class="cta" id="open-form">Participez</button>
@@ -64,13 +75,20 @@
 
                   <select id="character" required>
                     <option value="">Personnage joué</option>
+                    <option>A.K.I</option>
+                    <option>Akuma</option>
+                    <option>Alex</option>
                     <option>Blanka</option>
                     <option>Cammy</option>
                     <option>Chun-li</option>
+                    <option>C.Viper</option>
                     <option>Dee-Jay</option>
                     <option>Dhalsim</option>
+                    <option>Ed</option>
+                    <option>Elena</option>
                     <option>Guile</option>
                     <option>Honda</option>
+                    <option>Ingrid</option>
                     <option>Jamie</option>
                     <option>JP</option>
                     <option>Juri</option>
@@ -78,9 +96,14 @@
                     <option>Kimberly</option>
                     <option>Lily</option>
                     <option>Luke</option>
+                    <option>Mai</option>
                     <option>Manon</option>
                     <option>Marisa</option>
+                    <option>M.Bison</option>
+                    <option>Rashid</option>
                     <option>Ryu</option>
+                    <option>Sagat</option>
+                    <option>Terry</option>
                     <option>Zangief</option>
                   </select>
 

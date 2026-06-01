@@ -1,0 +1,136 @@
+/* =========================================================
+   LAPTOP / SMALL DESKTOP
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  html,
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  body {
+    background-image: url(../../img/noudasf6vert.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* =========================
+     GLOBAL LAYOUT
+  ========================= */
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .bloc-horizontale {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* =========================
+     SECTIONS
+  ========================= */
+
+  section {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+  }
+
+  .slide {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: clamp(2rem, 4vw, 4rem);
+
+    overflow: visible;
+  }
+
+  /* =========================================================
+     HERO
+  ========================================================= */
+
+  .hero-content {
+    max-width: 1200px;
+
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  /* ---------- TITLE ---------- */
+
+  .title {
+    width: 50%;
+
+    gap: 10rem;
+
+    transform: translateY(-80px);
+  }
+
+  .word-1,
+  .word-2,
+  .word-3 {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+  }
+
+  .word-1 {
+    margin-left: 4rem;
+  }
+
+  .word-3 {
+    margin-left: 5rem;
+  }
+
+  /* ---------- STREET FIGHTER ---------- */
+
+  .street-fighter {
+    width: 50%;
+  }
+
+  .street-title {
+    margin-left: -12rem;
+    margin-bottom: -2rem;
+
+    transform: rotate(-10deg);
+  }
+
+  .word-4,
+  .word-5 {
+    font-size: clamp(3rem, 7vw, 5rem);
+  }
+
+  /* ---------- CODY ---------- */
+
+  .hero-character img {
+    width: clamp(350px, 20vw, 420px);
+  }
+
+  /* ---------- CTA ---------- */
+
+  .hero-actions {
+    left: clamp(3rem, 10%, 8rem);
+    bottom: clamp(6rem, 15%, 8rem);
+  }
+
+  /* évite les débordements */
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}

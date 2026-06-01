@@ -1,0 +1,150 @@
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  body {
+    background-attachment: scroll;
+
+    background-image: url(../../img/noudasf6vert.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .slide {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+  }
+
+  /* =========================================================
+     HERO
+  ========================================================= */
+
+  .hero-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7rem;
+
+    padding-top: 5rem;
+  }
+
+  /* ---------- TITLE ---------- */
+
+  .title {
+    width: 100%;
+
+    align-items: center;
+
+    gap: 10rem;
+
+    transform: none;
+
+    text-align: center;
+  }
+
+  .word-1,
+  .word-2,
+  .word-3 {
+    margin: 0;
+
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
+
+  .word-2 {
+    transform: rotate(-10deg);
+  }
+
+  .word-3 {
+    transform: rotate(8deg);
+  }
+
+  /* ---------- STREET FIGHTER ---------- */
+
+  .street-fighter {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .street-title {
+    margin: 0 0 -2rem -15rem;
+
+    transform: rotate(-8deg);
+  }
+
+  .word-4,
+  .word-5 {
+    font-size: clamp(3rem, 10vw, 5rem);
+  }
+
+  /* ---------- CODY ---------- */
+
+  .hero-character img {
+    width: min(45vw, 420px);
+  }
+
+  /* ---------- CTA ---------- */
+
+  .hero-actions {
+    position: relative;
+
+    left: auto;
+    bottom: auto;
+
+    transform: none;
+
+    margin-top: -2rem;
+  }
+
+  /* =========================================================
+     NEXT MATCH
+  ========================================================= */
+
+  .next-match {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  /* =========================================================
+     BRACKET
+  ========================================================= */
+
+  .bracket {
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .bracket-content {
+    transform: scale(0.78);
+    transform-origin: top left;
+  }
+}
