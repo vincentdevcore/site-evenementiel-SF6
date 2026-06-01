@@ -2,7 +2,10 @@
 
 Site événementiel immersif autour d’un tournoi **Street Fighter 6**, développé en **HTML, CSS, JavaScript, PHP et MySQL**.
 
-Le projet propose une expérience visuelle inspirée de l’univers **Street Fighter 6**, avec un design orienté e-sport, un système d’inscription des joueurs ainsi qu’un panel administrateur dédié à la gestion du tournoi.
+Le projet propose une expérience visuelle inspirée de l’univers **Street Fighter 6**, avec un design orienté **e-sport**, un système d’inscription des joueurs ainsi qu’un **panel administrateur** dédié à la gestion du tournoi.
+
+🌐 **Site en ligne :**
+👉 https://kwerel-sf6-tournament.infinityfreeapp.com/index.php
 
 ---
 
@@ -61,9 +64,9 @@ Le site est optimisé pour :
 
 ## 🎨 Objectif du projet
 
-Créer une expérience immersive autour d’un événement **Street Fighter 6**, mêlant identité visuelle gaming/e-sport, tournoi compétitif et gestion simplifiée des participants.
+Créer une expérience immersive autour d’un événement **Street Fighter 6**, mêlant identité visuelle gaming / e-sport, tournoi compétitif et gestion simplifiée des participants.
 
-L’objectif était également de concevoir une interface responsive et immersive adaptée à tous les supports.
+L’objectif était également de concevoir une interface **responsive, immersive et accessible sur tous les supports**.
 
 ---
 
@@ -71,8 +74,6 @@ L’objectif était également de concevoir une interface responsive et immersiv
 
 Développé entièrement par **Dev'CoRe**
 
-Projet personnel de **web design & développement front-end/back-end**.
-
----
+Projet personnel de **web design & développement front-end / back-end**.
 
 ⭐ Si le projet vous plaît, n’hésitez pas à laisser une étoile sur GitHub !
